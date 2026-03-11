@@ -2,8 +2,13 @@
 
 A lightweight, zero-dependency (other than `cobra` for CLI routing) Golang CLI tool built for querying Polymarket's Gamma and CLOB APIs, heavily modularized and optimized to output clean JSON for AI/LLM Agent integration.
 
-## Building
+## Installation & Building
 
+### Download Pre-built Binaries
+You can download the pre-compiled binary for your operating system directly from the [GitHub Releases](../../releases) page. Ensure you extract the binary and place it somewhere in your `$PATH`.
+
+### Build from Source
+If you prefer to compile it yourself:
 ```bash
 # Recommended build (disables CGO for better cross-platform compatibility)
 CGO_ENABLED=0 go build -o polymarket main.go

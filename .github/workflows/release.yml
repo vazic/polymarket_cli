@@ -29,7 +29,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           goos: ${{ matrix.goos }}
           goarch: ${{ matrix.goarch }}
-          goversion: "1.22"
+          goversion: "1.22.1"
           binary_name: "polymarket"
           build_flags: -trimpath
           ldflags: -s -w
